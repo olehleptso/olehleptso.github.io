@@ -1,0 +1,9 @@
+.job {
+    width: 70%;
+    height: 125px;
+    background-color:white ;
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 6px;
+}
