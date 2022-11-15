@@ -1,19 +1,18 @@
 import Job from '../Job/Job';
 import './JobBoard.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function JobBoard() {
-    const initialJobs = [
-        {name:"1"},
-        {name:"2"},
-        {name:"3"},
-        {name:"4"},
-        {name:"5"},
-        {name:"6"},
-        {name:"7"},
-        {name:"8"},
-    ]
-    const [jobs, setjobs] = useState(initialJobs)
+    
+
+    const [jobs, setJobs] = useState([])
+
+      useEffect(() => {
+        fetch('https://api.json-generator.com/templates/ZM1r0eic3XEy/data?access_token=wm3gg940gy0xek1ld98uaizhz83c6rh2sir9f9fu')
+            .then(response => response.json())
+            .then(data => 
+                setJobs(data)
+            )},[]);
 
     return (
         <div className='board'>
