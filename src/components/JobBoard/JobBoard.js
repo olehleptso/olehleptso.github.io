@@ -17,7 +17,7 @@ function JobBoard() {
     return (
         <div className='board'>
             {jobs.map((data, index) => {
-                return <Job data={data} key={index}></Job>
+                return <Job data={data} id={index} key={index}></Job>
             })}
         </div>  
     );
