@@ -1,9 +1,54 @@
 .job {
-    width: 70%;
-    height: 125px;
+    width: 1400px;
+    height: 164px;
     background-color:white ;
     display: flex;
     margin: auto;
     margin-top: 5px;
-    border-radius: 6px;
+    border-radius: 8px;
+    padding: 24px, 16px, 24px, 16px;
+}
+
+.picture {
+    width: 10%;
+    height: 140px;
+    display: flex;
+}
+
+.picture img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    margin: 15% auto;
+}
+
+.info  {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.saved {
+    width: 10%;
+}
+
+.title {
+    color: rgb(96, 96, 143);
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+.gray {
+    color: rgb(138, 150, 167);
+    font-size:14px;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
