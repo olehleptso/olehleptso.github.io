@@ -1,12 +1,15 @@
 .job {
     width: 1400px;
-    height: 164px;
     background-color:white ;
-    display: flex;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 8px;
     border-radius: 8px;
-    padding: 24px, 16px, 24px, 16px;
+    padding: 24px 16px;
+    box-shadow: 0px 1px 3px 0px #00000033;
+}
+
+.inner {
+    display: flex;
 }
 
 .picture {
@@ -24,31 +27,101 @@
 
 .info  {
     width: 80%;
-    height: 70%;
-    margin: auto;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .saved {
-    width: 10%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .title {
     color: rgb(96, 96, 143);
-    font-size: large;
-    font-weight: bold;
-    
 }
 
 .gray {
     color: rgb(138, 150, 167);
-    font-size:14px;
-    font-weight: 500;
 }
 
-p {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+h2 {
+    font-family: 'ProximaNova';
+    font-style: normal;
+    margin:0;
+}
+
+.primary {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #5e6e9b;
+}
+
+.secondary {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #878D9D;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile h2 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@media (max-width: 425px) {
+    .job {
+        width: 92%;
+        padding: 2%;
+        margin: auto;
+        margin-top: 8px;
+        background-color: #EFF0F5;
+        box-shadow: 0px 2px 1px -1px #0000001F;
+    }
+
+    .picture img {
+        width: 60%;
+        height: 40%;
+        border-radius: 50%;
+    }
+
+    .primary {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.5625px;
+        max-height: 48px;
+        overflow: hidden;
+    }
+    
+    .secondary {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.23619px;
+    }
+    
+    .info {
+        width: 71%;
+    }
+    .picture {
+        width: 25%;
+    }
+
+    .picture img {
+        margin: 0 auto;
+    }
+    .saved {
+        display: none;
+    }
+    .mobile {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }

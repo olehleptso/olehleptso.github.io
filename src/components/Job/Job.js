@@ -4,18 +4,23 @@ import {Link} from 'react-router-dom';
 function Job({data, id}) {
     return (
         <div className='job'>
-            <div className='picture'>
-                <img src={data.pictures[0]}></img>
+            <div className='mobile'>
+                <h2 className='secondary'> Posted 2 days ago</h2>
             </div>
-            <div className='info'>
-                <Link to={`/job/${id}`}>
-                    <p className='title'>{data.title}</p>
-                </Link>
-                <p className='gray'>Department name - Allgemeines Krankenhaus der Stadt Wien - AKH</p>
-                <p className='gray'>Vienna, Austria</p>
-            </div>
-            <div className='saved'>
-                
+            <div className='inner'>
+                <div className='picture'>
+                    <img src={data.pictures[0]}></img>
+                </div>
+                <div className='info'>
+                    <Link to={`/job/${id}`}>
+                        <h2 className='primary'>{data.title}</h2>
+                    </Link>
+                    <h2 className='secondary'>Department name - Allgemeines Krankenhaus der Stadt Wien - AKH</h2>
+                    <h2 className='secondary'>Vienna, Austria</h2>
+                </div>
+                <div className='saved'>
+                    <h2 className='secondary'> Posted 2 days ago</h2>
+                </div>
             </div>
         </div>
     );
