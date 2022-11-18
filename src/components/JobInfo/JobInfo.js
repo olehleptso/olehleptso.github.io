@@ -13,8 +13,27 @@ function JobInfo() {
         )},[]);
 
     return (
-        <div className='job'>
-            <p>{job.title}</p>
+        <div className='container'>
+            <div className='outer'>
+                <div className='inner'>
+                    <div className='jobinfo'>
+                        <div className='flex'>
+                            <h2>Job Details</h2>
+                        </div>
+                        <div className='flex'>
+                            <h2>Save to my list</h2>
+                            <h2>Share</h2>
+                        </div>
+                    </div>
+                    <button className='standart'>
+                        Apply Now
+                    </button>
+                    <h2>Title here</h2>
+                    <h2 className='secondary'> Posted 2 days ago</h2>
+                </div>
+                <div className='map'>
+                </div>
+            </div>
         </div>
     );
 }

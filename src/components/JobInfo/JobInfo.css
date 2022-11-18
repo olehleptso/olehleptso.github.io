@@ -1,0 +1,44 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.outer {
+    margin: 50px auto;
+    width: 60%;
+}
+
+.inner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobinfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    width: 30%;
+}
+
+.flex {
+    display: flex;
+}
+
+.standart {
+    width: 127px;
+    height: 52px;
+    color: white;
+    background-color: #384564;
+    border:none;
+    border-radius: 8px;
+    font-family: 'ProximaNova';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 50px 0;
+}
