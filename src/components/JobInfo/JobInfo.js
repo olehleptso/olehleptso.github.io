@@ -36,7 +36,16 @@ function JobInfo() {
                         </div>
                     </SectionHeader>
                     <Button>Apply Now</Button>
-                    <h2 className='heading'>{job.title}</h2>
+                    <div className='titleSalary'>
+                        <div className='title'>
+                            <h2 className='heading'>{job.title}</h2>
+                        </div>
+                        <div className='salary'>
+                            <h2 className='head'><span>&#8364;</span>{job.salary.replace(/k/g, ' 000')}</h2>
+                            <p>Brutto, per year</p>
+                        </div>
+                    </div>
+                    
                     <h2 className='secondary'> Posted 2 days ago</h2>
                     <TextBlock>
                         At WellStar, we all share common goals. That’s what makes us so successful – and such an integral part of our communities. 

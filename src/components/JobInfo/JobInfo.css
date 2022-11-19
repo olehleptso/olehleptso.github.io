@@ -4,6 +4,30 @@
     align-content: center;
 }
 
+.titleSalary {
+    width: 100%;
+    display: flex;
+}
+
+.title {
+    width: 70%;
+}
+
+.salary {
+    width: 30%;
+}
+
+.salary p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #38415d;
+    margin-right: 20px;
+    margin: 0;
+
+}
+
 .outer {
     margin: 50px auto;
     width: 60%;
@@ -18,21 +42,6 @@
 
 .map {
     width: 30%;
-}
-
-
-.standart {
-    width: 127px;
-    height: 52px;
-    color: white;
-    background-color: #384564;
-    border:none;
-    border-radius: 8px;
-    font-family: 'ProximaNova';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    margin: 50px 0;
 }
 
 ul {
@@ -71,4 +80,5 @@ ul {
     line-height: 30px;
     letter-spacing: -0.75px;
     text-align: left;
+    color: #3A4562;
 }   
