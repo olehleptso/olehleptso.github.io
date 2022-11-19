@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Perk from '../Perk/Perk';
 import TextBlock from '../TextBlock/TextBlock';
+import Button from '../Button/Button';
 
 function JobInfo() {
     const {id} = useParams()
@@ -30,13 +31,11 @@ function JobInfo() {
                 <div className='content'>
                     <SectionHeader title="Job Details" underline>
                         <div className='flex'>
-                            <h2>Save to my list</h2>
-                            <h2>Share</h2>
+                            <TextBlock>Save to my list</TextBlock>
+                            <TextBlock>Share</TextBlock>
                         </div>
                     </SectionHeader>
-                    <button className='standart'>
-                        Apply Now
-                    </button>
+                    <Button>Apply Now</Button>
                     <h2 className='heading'>{job.title}</h2>
                     <h2 className='secondary'> Posted 2 days ago</h2>
                     <TextBlock>
@@ -69,10 +68,7 @@ function JobInfo() {
                             <li className='description'>Short-term and Long-term Disability Insurance and life insurance</li>
                         </ul>
                     </TextBlock>
-                    
-                    <button className='standart'>
-                        Apply Now
-                    </button>
+                    <Button>Apply Now</Button>
                     <SectionHeader title="Additional info" underline />
                     <TextBlock>
                         Employment Type
