@@ -1,0 +1,25 @@
+.perk {
+    text-align: center;
+    width: 220px;
+    padding: 16px 0;
+    margin-right: 8px;
+    border-radius: 8px;
+    font-family: "Proximanova";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.4571428596973419px;
+    text-align: center;
+}
+
+.employmentType {
+    background: rgba(161, 177, 219, 0.317343);
+    border: 1px solid rgba(85, 105, 158, 0.3);
+    color: #55699E;
+}
+
+.benefits {
+    background: rgba(255, 207, 0, 0.15);
+    border: 1px solid #FFCF00;
+    color: #988B49;
+}
