@@ -4,16 +4,21 @@
     font-size: 18px;
     line-height: 25px;
     color: #38415d;
-    margin-right: 20px;
+    margin: 18px 20px 18px 0;
 }
 
 .textBlock li{
     list-style: square;
-    
 }
 
 .textBlock li::marker {
     color: rgb(156, 156, 156);
     font-size: 25px;
+    text-align: left;
+}
 
+@media (max-width: 425px) {
+    .textBlock li {
+        list-style-position: inside;
+    }
 }

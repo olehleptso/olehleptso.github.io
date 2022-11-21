@@ -3,9 +3,9 @@ import './TextBlock.css';
 
  function TextBlock({children}) {
   return (
-    <p className='textBlock'>
+    <span className='textBlock'>
         {children}
-    </p>
+    </span>
     
   )
 }

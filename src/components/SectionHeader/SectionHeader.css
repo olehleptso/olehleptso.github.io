@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
 }
 
 .flex {
@@ -15,4 +16,14 @@
 
 .underline {
     border-bottom: 1px solid #3a45622a;
+}
+
+.sectionHeader h2 {
+    font-family: "ProximaNova";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.4133332073688507px;
+    text-align: left;
+    color: #3A4562;
 }

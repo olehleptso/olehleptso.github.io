@@ -4,6 +4,10 @@
     align-content: center;
 }
 
+.mobile {
+    display: none;
+}
+
 .titleSalary {
     width: 100%;
     display: flex;
@@ -31,6 +35,7 @@
 .outer {
     margin: 50px auto;
     width: 60%;
+    display: flex;
 }
 
 .content {
@@ -42,7 +47,9 @@
 
 .map {
     width: 30%;
+    margin:20px;
 }
+
 
 ul {
     padding: 0;
@@ -82,3 +89,41 @@ ul {
     text-align: left;
     color: #3A4562;
 }   
+
+@media (max-width: 425px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .outer {
+        width: 100%;
+    }
+
+    .content {
+        width: 90%;
+        margin: auto
+    }
+
+    .titleSalary {
+        margin-top: 20px;
+    }
+    
+    .image {
+        width: 100px;
+        height: 150px;
+    }
+
+    .pictures {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .map {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .mobile {
+        display: flex;
+    }
+}

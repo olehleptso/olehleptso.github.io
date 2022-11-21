@@ -1,10 +1,16 @@
 import './Button.css';
+import {Link} from 'react-router-dom';
 
-function Button({children}) {
+function Button({back, children}) {
   return (
-    <button className='button'>
+    back ? 
+    <button className='button return'>
+        <Link to='/'>{children}</Link>
+    </button> 
+    :
+    <button className='button standart'>
         {children}
-    </button>
+    </button> 
   )
 }
 

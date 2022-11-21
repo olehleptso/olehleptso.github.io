@@ -1,10 +1,11 @@
 import './JobInfo.css';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Perk from '../Perk/Perk';
 import TextBlock from '../TextBlock/TextBlock';
 import Button from '../Button/Button';
+import Contacts from '../Contacts/Contacts';
 
 function JobInfo() {
     const {id} = useParams()
@@ -15,10 +16,7 @@ function JobInfo() {
       useEffect(() => {
         fetch('https://api.json-generator.com/templates/ZM1r0eic3XEy/data?access_token=wm3gg940gy0xek1ld98uaizhz83c6rh2sir9f9fu')
             .then(response => response.json())
-            .then(data => {
-                setJob(data[id])
-                console.log(data[id])
-            }
+            .then(data => setJob(data[id])
         )}, []);
 
     if (!job) {
@@ -30,12 +28,14 @@ function JobInfo() {
             <div className='outer'>
                 <div className='content'>
                     <SectionHeader title="Job Details" underline>
-                        <div className='flex'>
+                        <div className='flex desktop'>
                             <TextBlock>Save to my list</TextBlock>
                             <TextBlock>Share</TextBlock>
                         </div>
                     </SectionHeader>
-                    <Button>Apply Now</Button>
+                    <div className='desktop'>
+                        <Button>Apply Now</Button>
+                    </div>
                     <div className='titleSalary'>
                         <div className='title'>
                             <h2 className='heading'>{job.title}</h2>
@@ -97,14 +97,30 @@ function JobInfo() {
                         })}
                     </div>
                     <SectionHeader title="Attached images" underline />
-                    <div>
+                    <div className='pictures'>
                         {job.pictures.map((data, index) => {
                             return <img className="image" key={index} src={data}></img>
                         })}
                     </div>
+                    <div className='desktop'>
+                        <Button back>
+                            RETURN TO JOB BOARD
+                        </Button>   
+                    </div>
+                    <div className='mobile'>
+                        <SectionHeader title="Contacts" underline />
+                    </div>
+                    
+                    <div className='map mobile'>
+                        <Contacts/>  
+                    </div>
+
                 </div>
-                <div className='map'>
+                
+                <div className='map desktop'>
+                    <Contacts/>
                 </div>
+                
             </div>
         </div>
     );
